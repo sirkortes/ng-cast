@@ -12,6 +12,6 @@ angular.module('video-player')
   	controllerAs: 'ctrl',
   	bindToController: true,
     templateUrl: 'src/templates/videoPlayer.html',
-    scope: { video: '=' }	
+    scope: { video: '<' }	
   };
 });

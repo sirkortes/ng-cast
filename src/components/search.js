@@ -1,6 +1,6 @@
 angular.module('video-player')
 
-.controller('searchController', function($scope){
+.controller('searchController', function(){
 
 
 
