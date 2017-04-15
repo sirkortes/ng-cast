@@ -3,10 +3,6 @@ angular.module('video-player')
 .controller('videoListController', function($scope){
 
 
-  this.onClick = (video) => {
-    console.log("CLICK!",video);
-  }
-
 })
 
 .directive('videoList', function() {
@@ -19,8 +15,8 @@ angular.module('video-player')
     bindToController: true,
     templateUrl: 'src/templates/videoList.html',
     scope: { 
-      // callbackFn: '&',
-      videos: '='
+      onClick: '<',
+      videos: '<'
     }
   };
 

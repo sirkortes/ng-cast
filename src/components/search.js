@@ -2,18 +2,7 @@ angular.module('video-player')
 
 .controller('searchController', function($scope){
 
-  
-	
-  this.onClick = () => {
-    
-    var query = $scope.searchInput;
-    console.log("serching for",query);
-    $scope.searchInput = '';
-	}
 
-  this.result = function(){
-
-  }
 
 })
 
@@ -25,7 +14,10 @@ angular.module('video-player')
   	controllerAs: 'ctrl',
   	bindToController: true,
     templateUrl: 'src/templates/search.html',
-    scope: {}
+    scope: {
+      result: '<',
+      searchClick: '<'
+    }
 
   };
 });
